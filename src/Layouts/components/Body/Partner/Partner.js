@@ -9,7 +9,7 @@ function Partner() {
         title: 'Đối tác âm nhạc',
     };
     return (
-        <div className={cx('partner', 'row')}>
+        <div className={cx('partner', 'row', 'grid-wide')}>
             <div className={cx('partner-title', 'l-12', 'm-12', 'c-12')}>
                 <Link>
                     <h2>{props.title}</h2>

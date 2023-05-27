@@ -3,12 +3,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from '~/routes/routes';
 import DefaultLayout from './Layouts/DefaultLayout';
 import ButtonTop from './components/ButtonTop/ButtonTop';
-<link rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />;
+import { Helmet } from 'react-helmet';
 
 function App() {
     return (
         <Router>
             <div className="App">
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Music App</title>
+                    <link rel="canonical" href="http://mysite.com/example" />
+                    <meta name="description" content="Helmet application" />
+                </Helmet>
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         const Page = route.component;

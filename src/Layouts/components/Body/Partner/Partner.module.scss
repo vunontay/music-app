@@ -1,5 +1,6 @@
 .partner {
     max-width: var(--default-layout-width);
+    margin: 0 auto;
 }
 .partner-title h2 {
     text-align: center;
@@ -33,6 +34,10 @@ ul.partner-nav {
     ul.partner-nav{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
+
+        li.partner-item {
+            max-width: 140px;
+        }   
         
     }
 }
