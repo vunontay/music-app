@@ -284,7 +284,7 @@ function Player() {
                     <div className={cx('audio-player')}>
                         <div className={cx('audio-box')}>
                             <div className={cx('audio-img')}>
-                                {songData && <img src={songData.thumbnail} alt={songData.aliasTitle}></img>}
+                                {songData && <img src={songData.thumbnailM} alt={songData.aliasTitle}></img>}
                             </div>
                         </div>
                         <div className={cx('audio-title')}>
@@ -343,7 +343,7 @@ function Player() {
                         </div>
 
                         <div className={cx('audio-overlay')}>
-                            {songData && <img src={songData.thumbnail} alt={songData.aliasTitle}></img>}
+                            {songData && <img src={songData.thumbnailM} alt={songData.aliasTitle}></img>}
                         </div>
                     </div>
                     <div className={cx('lyric-player')}>

@@ -69,12 +69,12 @@ function BoxVideo(props) {
                 </h2>
                 <ul className={cx('video-nav')}>
                     <li>
-                        <Link className={cx('nav-link')} to="/" activeclassname={cx('active')}>
+                        <Link className={cx('nav-link')} activeclassname={cx('active')}>
                             Nghe nhiều
                         </Link>
                     </li>
                     <li>
-                        <Link className={cx('nav-link')} to="/" activeclassname={cx('active')}>
+                        <Link className={cx('nav-link')} activeclassname={cx('active')}>
                             Mới nhất
                         </Link>
                     </li>
