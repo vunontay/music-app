@@ -1,0 +1,183 @@
+
+
+
+.login {
+    display: flex;
+    justify-content: center;
+    background-color: #192536;
+    padding: 60px 0;
+    overflow: hidden;
+    color: #fff;
+}
+
+.login-step1 {
+    width: 380px;
+    padding: 20px 0;
+    .login-top{
+        padding: 30px 48px;
+        background: #21324a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .login-logo {
+            width: 50%;
+            display: block;        
+        }
+        }
+    }
+    
+
+    .login-bottom {
+        width: 100%;
+        min-height: 60px;
+        background-color: #21324a;
+        padding: 20px;
+        font-size: 14px;
+        line-height: 19px;
+        color: #bcbcbc;
+        text-align: center;
+        margin-top: 20px;
+        overflow: hidden;
+
+        h4 {
+            width: 100%;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 24px;
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 1px;
+                background: rgba(255,255,255,0.3);
+                width: 80px;
+                border: none;
+                left: 25px;
+                top: 10px;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 1px;
+                background: rgba(255,255,255,0.3);
+                width: 80px;
+                border: none;
+                right: 25px;
+                top: 10px;
+            }
+        }
+        
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+
+        svg {
+            transform: translate(-50%, 25%);
+            font-size: 2rem;
+        }
+                    
+            .facebook {
+                display: flex;
+                justify-content: center;
+                width: 136px;
+                height: 32px;
+                border-radius: 4px;
+                background-color: #fff;
+                line-height: 32px;
+                text-align: center;
+                color: #3987f1;
+            }
+            .google {
+                display: flex;
+                justify-content: center;
+                width: 136px;
+                height: 32px;
+                border-radius: 4px;
+                background-color: #fff;
+                line-height: 32px;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.54);
+            }
+            p {
+                display: inline;
+                align-items: center;
+            }
+        }
+    }
+    
+
+.forget {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #bcbcbc;
+    margin-top: 10px;
+
+    a {
+        color: var(--white);
+    }
+}
+
+// Account
+
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 4px;
+    background-color: #21324a;
+
+    .photo{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    h3{
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: all linear 0.5s;
+        &:hover {
+            color: var(--primary);
+        }
+    }
+    
+    button.logout {
+        margin-top: 20px;
+        padding: 6px 12px;
+        background-color: var(--primary);
+        color: var(--white);
+        font-size: 1.4rem;
+        font-weight: 400;
+        border-radius: 4px;
+        line-height: 1.4rem;
+        cursor: pointer;
+        transition: all linear 0.5s;
+
+        &:hover {
+            background-color: #409f80;
+        }
+    }
+}

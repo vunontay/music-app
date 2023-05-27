@@ -1,0 +1,23 @@
+.mv {
+    display: flex;
+    justify-content: center;
+    background-color: #192536;
+    padding-bottom: 30px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    background-color: #192536;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 739px) {
+    .mv {
+        padding: 30px 0;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .mv{
+        padding: 30px 0;
+    }
+}

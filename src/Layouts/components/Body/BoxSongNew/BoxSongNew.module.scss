@@ -1,0 +1,123 @@
+.new {
+    max-width: (var(--default-layout-width));
+    height: auto;
+    display: flex;
+    padding-top: 30px;
+
+}
+.new-left {
+    padding-right: 20px;
+}
+
+.new-title, .artist-title {
+
+    a {
+        font-size: 2.6rem;
+        font-weight: 600;
+        color: var(--white);
+    }
+}
+.new-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: 40px 0;
+
+    .new-item {
+        height: 90px;
+        width: 100%;
+        cursor: pointer;
+        border-bottom: #303b4a solid 1px;
+        padding: 10px 0;
+    }
+
+}
+.new-rank {
+    position: relative;
+    list-style: none;
+    .new-info {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: calc(100% - 80px);
+        max-height: 90px;
+        cursor: pointer;
+        h3 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: var(--white);
+        }
+
+        a {
+            color: var(--white);
+            font-size: 1.4rem;
+            font-weight: 300;
+            transition: 0.3s;
+
+            &:hover {
+                color: var(--primary);
+            }
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 1.4rem;
+            color: var(--text);
+            font-weight: 300;
+        }
+    }
+
+    .new-img {
+        width: 58px;
+        height: 58px;
+        display: block;
+    }
+}
+
+.new-right {
+    width: 300px;
+    cursor: pointer;
+}
+
+.artist-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.artist-box :nth-child(2) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    transform: scale(1);
+}
+
+.artist-box .artist-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+@media (max-width: 739px) {
+    .new-left{
+        padding-right: 0;
+    }
+    .new-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+  
+@media (min-width: 740px) and (max-width: 1023px) {
+    .new-left{
+        padding-right: 0;
+    }
+}

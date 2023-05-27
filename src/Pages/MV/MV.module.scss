@@ -1,0 +1,44 @@
+.video {
+    margin-top: 20px;
+    display: flex;
+
+    .video-left{
+        width: 100%;
+
+        .video-item {
+            width: 100%;
+           
+        }
+        .name-detail {
+            font-size: 2.4rem;
+            color: var(--white);
+            font-weight: 600;
+            margin-top: 20px;
+            .artist {
+                color: #6a8385;
+                font-weight: 400;
+                font-size: 1.6rem;
+                letter-spacing: 1px;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .description {
+                color: #6a8385;
+                font-size: 1.4rem;
+                font-weight: 300;
+                line-height: 2.6rem;
+            }
+        }
+    }
+    .video-right{
+        width: 300px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 739px) {
+    .video{
+        padding: 0 10px;
+    }
+}

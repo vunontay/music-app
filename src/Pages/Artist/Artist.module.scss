@@ -1,0 +1,134 @@
+
+.artist {
+    display: flex;
+    justify-content: center;
+    background-color: #192536;
+    padding: 60px 0;
+}
+.artist-box {
+    display: flex;
+    align-items: center;
+}
+.song {
+    display: flex;
+    justify-content: center;
+    background-color: #192536;
+    padding-bottom: 60px ;
+}
+.song-box {
+    width: var(--default-layout-width);
+}
+.artist-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.artist-info {
+    margin-left: 100px;
+    color: var(--white);
+    display: grid;
+    gap: 20px;
+    h4 {
+        font-size: 2.6rem;
+        font-weight: 600;
+    }
+    :nth-child(2), :nth-child(3) {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    .name {
+        color: var(--primary);
+    }
+    .follow {
+        margin-left: 20px;
+
+        svg {
+            margin-left: 4px;
+            color: #ff484d;
+        }
+    }
+    .btn-play {
+        padding: 12px 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        color: var(--white);
+        background-color: var(--primary);
+        transition: all linear 0.3s;
+        svg {
+            margin-right: 6px;
+        }
+
+        &:hover {
+            background-color: #f60;
+        }
+    }
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0 8px 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #21324a;
+    border-radius: 10px;
+
+    .song-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .song-info {
+       
+        color: var(--white);
+        margin-left: 10px;
+        font-weight: 400;
+
+        .song-name {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: var(--primary);
+        }
+
+        .song-duration {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+    }
+}
+
+@media (max-width: 739px) {
+    .artist {
+        padding: 30px 10px;
+    }
+    .artist-info {
+        margin-left: 20px;
+        
+    }
+    .artist-img {
+        height: 200px;
+    }
+    .song {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .artist-info {
+        margin-left: 30px;
+    }
+    .song {
+        padding: 0 10px;
+    }
+}
+@media (min-width:1024px) and (max-width:1366px){
+    .artist-info {
+        margin-left: 50px;
+        display: grid;
+    }
+    .song {
+        padding: 0 10px;
+    }
+}
