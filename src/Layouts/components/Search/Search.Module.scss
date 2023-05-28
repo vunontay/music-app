@@ -29,6 +29,7 @@
         height: 100%;
         padding: 10px;
         color: #5c5c5c;
+        background-color: var(--white);
         border: none;
         outline: none;
         border-top-left-radius: 4px;
@@ -48,6 +49,7 @@
     padding-left: 60px;
     font-size: 2rem;
     color: #999;
+    background-color: var(--white);
     cursor: pointer;
     overflow: hidden;
 }
