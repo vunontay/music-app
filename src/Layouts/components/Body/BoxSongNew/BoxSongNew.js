@@ -24,9 +24,9 @@ function BoxSongNew() {
                 setData(filterData);
                 setDetail(filterData);
                 const filterArtist = response.data.data.items.find(
-                    (item) => item.sectionType === 'playlist' && item.title === 'Nghệ sĩ thịnh hành ',
+                    (item) => item.sectionType === 'playlist' && item.title === 'Nghệ sĩ thịnh hành',
                 ).items;
-
+                console.log(filterArtist);
                 setArtist(filterArtist);
                 setDataArtist(filterArtist);
             })
